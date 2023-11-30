@@ -12,7 +12,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material.icons.filled.ExitToApp
 import androidx.compose.material.icons.filled.MailOutline
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -87,8 +89,8 @@ fun ElapsedTime() {
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(4.dp)
                 ) {
-                    Icon(imageVector = Icons.Default.DateRange, contentDescription = "")
-                    Text("Current Time")
+                    Icon(imageVector = Icons.Default.ExitToApp, contentDescription = "")
+                    Text("Local Current Date & Time")
                 }
             }
             Text(text = startDateTime)
@@ -105,7 +107,7 @@ fun ElapsedTime() {
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(4.dp)
                 ) {
-                    Icon(imageVector = Icons.Default.MailOutline, contentDescription = "")
+                    Icon(imageVector = Icons.Default.DateRange, contentDescription = "")
                     Text("Calculate Elapsed Time")
                 }
             }
